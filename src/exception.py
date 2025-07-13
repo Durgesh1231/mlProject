@@ -1,5 +1,5 @@
 import sys
-import logging
+from src.logger import logging
 
 def error_message_detail(error , error_detail:sys):
     _,_,exc_tb = error_detail.exc_info()        ### i am not interested in first error    this code tell which line error occured
@@ -17,6 +17,7 @@ def error_message_detail(error , error_detail:sys):
 
         def __str__(self):
             return self.error_message
+
         
 
         
